@@ -5,12 +5,12 @@ You can fork on [GitHub](https://github.com/avlcjw/Fuck-framework) to maintain t
 
 您可以在[GitHub](https://github.com/avlcjw/Fuck-framework)上分支框架来维护内容。
 
-###Diagram [框架图表]
+### Diagram   [框架图表]
 ![Diagram](https://raw.githubusercontent.com/avlcjw/wtoip-frontend-framework/master/framework.diagram.png)
 
 link: [Diagram](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=framework.diagram.xml#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Favlcjw%2Fwtoip-frontend-framework%2Fmaster%2Fframework.diagram.xml)
 
-###启动方法(返回实例)
+### startup [启动并返回实例]
   
 ```
 //return an Instance. Used to manipulate datas with the servals APIs;
