@@ -57,7 +57,8 @@ var wtoip = new Wtoip({
 - Fuck-bind：显示数据
 - Fuck-each：循环数据
 - Fuck-if：条件显隐
-```html
+
+``` html
 <div class="row">
     <div class="col-sm-12">
       <h4>1.循环指令： fuck-each</h4>
@@ -78,7 +79,7 @@ var wtoip = new Wtoip({
 ### DataFlow  [数据绑定]
 
 - Fuck-model：绑定数据
-```html
+``` html
 <div class="form-group">
         <label for="username">
           双向绑定：username -
