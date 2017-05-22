@@ -1,19 +1,58 @@
-## Welcome to GitHub Pages
+## Welcome to Wtoip - A Frontend Framework base on jQuery ^1.12.0 & compatible with ^IE8
+    欢迎来到 Wtoip - 一款基于 `jQuery^1.12.0` 兼容 `IE8` 的前端框架
 
-You can use the [editor on GitHub](https://github.com/avlcjw/myblog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You can fork on [GitHub](https://github.com/avlcjw/Fuck-framework) to maintain the content of the framework.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+您可以在[GitHub](https://github.com/avlcjw/Fuck-framework)上分支框架来维护内容。
 
-### Markdown
+###Diagram [框架图表]
+![Diagram](https://raw.githubusercontent.com/avlcjw/wtoip-frontend-framework/master/framework.diagram.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+link: [Diagram](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=framework.diagram.xml#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Favlcjw%2Fwtoip-frontend-framework%2Fmaster%2Fframework.diagram.xml)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
+###启动方法(返回实例)
+  
+```
+//return an Instance. Used to manipulate datas with the servals APIs;
+var wtoip = new Wtoip({
+    model: {
+      datas: {
+        atestData: '这是测试初始化数据',
+        username: '用户名',
+        password: '123123123123ss',
+        items: [
+          {
+            name: 'name1',
+          },
+          {
+            name: 'name2',
+          }
+        ]
+      }
+    },
+    view: {
+      container: '#container',
+      events: {
+        init: function (e) {         
+          // console.log(this, '程序初始化回调函数!');
+        },
+        buy: function (e) {
+          // console.log(this);
+        },
+        test: function (e) {
+          // console.log(this);
+          alert('test');
+        }
+      }
+    }
+  });
+  
+   wtoip.$datas.password = 321;
+   //this operation with change the Instance, and the framework will automatic update the view inside the app.
+  
+```  
+  
+### Template  [模版]
 
 - Bulleted
 - List
