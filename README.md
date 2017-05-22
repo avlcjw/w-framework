@@ -52,24 +52,44 @@ var wtoip = new Wtoip({
   
 ```  
   
-### Template  [模版]
+### Template & Directive  [模版指令]
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+- Fuck-bind：显示数据
+- Fuck-each：循环数据
+- Fuck-if：条件显隐
+```
+<div class="row">
+    <div class="col-sm-12">
+      <h4>1.循环指令： fuck-each</h4>
+      <ul class="swiper-wrapper">
+        <li Fuck-each="items">
+          <span Fuck-bind="name"></span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-12">
+      <h4>2.绑定指令： fuck-bind</h4>
+      <p Fuck-bind="atestData3"></p>
+    </div>
+</div>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+  
+### DataFlow  [数据绑定]
 
-### Jekyll Themes
+- Fuck-model：绑定数据
+```
+<div class="form-group">
+        <label for="username">
+          双向绑定：username -
+          <span fuck-bind="username"></span>
+        </label>
+        <input type="text" class="form-control" id="username" placeholder="请输入username" fuck-model="username">
+</div>
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/avlcjw/myblog/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+
 
 ### Support or Contact
 
