@@ -79,6 +79,7 @@ var wtoip = new Wtoip({
 ### DataFlow  [数据绑定]
 
 - Fuck-model：绑定数据
+
 ``` html
 <div class="form-group">
         <label for="username">
