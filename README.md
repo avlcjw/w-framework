@@ -1,20 +1,20 @@
-## Welcome to Wtoip - A Frontend Framework base on jQuery ^1.12.0 & compatible with ^IE8
-    欢迎来到 Wtoip - 一款基于 `jQuery^1.12.0` 兼容 `IE8` 的前端框架
+## Welcome to W-framework - A Frontend Framework base on jQuery ^1.12.0 & compatible with ^IE8
+    一款基于 `jQuery^1.12.0` 兼容 `IE8` 的前端框架
 
 You can fork on [GitHub](https://github.com/avlcjw/Fuck-framework) to maintain the content of the framework.
 
 您可以在[GitHub](https://github.com/avlcjw/Fuck-framework)上分支框架来维护内容。
 
 ### Diagram   [框架图表]
-![Diagram](https://raw.githubusercontent.com/avlcjw/wtoip-frontend-framework/master/framework.diagram.png)
+![Diagram](https://github.com/avlcjw/lva.js/blob/master/framework.diagram.png)
 
-link: [Diagram](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=framework.diagram.xml#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Favlcjw%2Fwtoip-frontend-framework%2Fmaster%2Fframework.diagram.xml)
+link: [Diagram](https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=framework.diagram.xml#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Favlcjw%2Fw-framework%2Fmaster%2Fframework.diagram.xml)
 
 ### startup [启动并返回实例]
   
 ```
 //return an Instance. Used to manipulate datas with the servals APIs;
-var wtoip = new Wtoip({
+var w = new W({
     model: {
       datas: {
         atestData: '这是测试初始化数据',
@@ -47,7 +47,7 @@ var wtoip = new Wtoip({
     }
   });
   
-   wtoip.$datas.password = 321;
+   w.$datas.password = 321;
    //this operation with change the Instance, and the framework will automatic update the view inside the app.
   
 ```  
