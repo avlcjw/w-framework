@@ -1,9 +1,9 @@
 ## Welcome to W-framework - A Frontend Framework base on jQuery ^1.12.0 & compatible with ^IE8
     一款基于 `jQuery^1.12.0` 兼容 `IE8` 的前端框架
 
-You can fork on [GitHub](https://github.com/avlcjw/Fuck-framework) to maintain the content of the framework.
+You can fork on [GitHub](https://github.com/avlcjw/lva-framework) to maintain the content of the framework.
 
-您可以在[GitHub](https://github.com/avlcjw/Fuck-framework)上分支框架来维护内容。
+您可以在[GitHub](https://github.com/avlcjw/lva-framework)上分支框架来维护内容。
 
 ### Diagram   [框架图表]
 ![Diagram](https://github.com/avlcjw/lva.js/blob/master/framework.diagram.png)
@@ -54,23 +54,23 @@ var w = new W({
   
 ### Template & Directive  [模版指令]
 
-- Fuck-bind：显示数据
-- Fuck-each：循环数据
-- Fuck-if：条件显隐
+- lva-bind：显示数据
+- lva-each：循环数据
+- lva-if：条件显隐
 
 ``` html
 <div class="row">
     <div class="col-sm-12">
-      <h4>1.循环指令： fuck-each</h4>
+      <h4>1.循环指令： lva-each</h4>
       <ul class="swiper-wrapper">
-        <li Fuck-each="items">
-          <span Fuck-bind="name"></span>
+        <li lva-each="items">
+          <span lva-bind="name"></span>
         </li>
       </ul>
     </div>
     <div class="col-sm-12">
-      <h4>2.绑定指令： fuck-bind</h4>
-      <p Fuck-bind="atestData3"></p>
+      <h4>2.绑定指令： lva-bind</h4>
+      <p lva-bind="atestData3"></p>
     </div>
 </div>
 ```
@@ -78,15 +78,15 @@ var w = new W({
   
 ### DataFlow  [数据绑定]
 
-- Fuck-model：绑定数据
+- lva-model：绑定数据
 
 ``` html
 <div class="form-group">
         <label for="username">
           双向绑定：username -
-          <span fuck-bind="username"></span>
+          <span lva-bind="username"></span>
         </label>
-        <input type="text" class="form-control" id="username" placeholder="请输入username" fuck-model="username">
+        <input type="text" class="form-control" id="username" placeholder="请输入username" lva-model="username">
 </div>
 ```
 
